@@ -13,6 +13,7 @@ public class Expense {
     private Long id;
     private String title;
     private Double amount;
+    private String category;
     private LocalDate expenseDate;
 
     //---Getters and setters---
@@ -46,5 +47,13 @@ public class Expense {
 
     public void setExpenseDate(LocalDate ExpenseDate){
         this.expenseDate = expenseDate;
+    }
+
+    public String getCategory(){
+        return category;
+    }
+
+    public void setCategory(String category){
+        this.category = category;
     }
 }
